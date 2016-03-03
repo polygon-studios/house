@@ -18,9 +18,9 @@ public class Character : MonoBehaviour {
 	bool startingPosSetRL = false;
 	bool startingPosSetLRB = false;
 
-	bool leftToRightPlaying = false;
-	bool rightToLeftPlaying = false;
-	bool leftToRightBINDLEPlaying = false;
+	public bool leftToRightPlaying = false;
+	public bool rightToLeftPlaying = false;
+	public bool leftToRightBINDLEPlaying = false;
 
 	List<Vector3> leftToRightPoints;
 	List<Vector3> leftToRightBINDLEPoints;
@@ -38,11 +38,11 @@ public class Character : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Movement ();
+		Animations ();
 	}
 
-	void Movement(){
-		animator.SetFloat ("foxMoveSpeed", Mathf.Abs (Input.GetAxis ("Horizontal")));
-       
+	void Animations (){
+
 		if(Input.GetKey(KeyCode.J) || leftToRightPlaying == true){
 			if(startingPosSetLR == false){
 				this.transform.position = leftToRightPoints[0];
@@ -51,13 +51,13 @@ public class Character : MonoBehaviour {
 			}
 			leftToRightPlaying=true;
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[1], Time.deltaTime*8f);
-
+			
 			if(transform.position == leftToRightPoints[1]){
 				startingPosSetLR = false;
 				leftToRightPlaying = false;
 			}
 		}
-
+		
 		if(Input.GetKey(KeyCode.K) || rightToLeftPlaying == true){
 			if(startingPosSetRL == false){
 				this.transform.position = leftToRightPoints[1];
@@ -66,13 +66,19 @@ public class Character : MonoBehaviour {
 			}
 			rightToLeftPlaying=true;
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[0], Time.deltaTime*8f);
-
+			
 			
 			if(transform.position == leftToRightPoints[0]){
 				startingPosSetRL = false;
 				rightToLeftPlaying = false;
 			}
 		}
+	}
+
+	void Movement(){
+		animator.SetFloat ("foxMoveSpeed", Mathf.Abs (Input.GetAxis ("Horizontal")));
+       
+
 
 		if (Input.GetKey (KeyCode.N) || leftToRightBINDLEPlaying == true) {
 			if(startingPosSetLRB == false){
