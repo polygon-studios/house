@@ -27,12 +27,8 @@ public class SocketIOLogic : MonoBehaviour
 	{
 
 	}
-
-
 	
 
-	
-	
 	public void TestBoop(SocketIOEvent e)
 	{
 		Debug.Log("[SocketIO] Boop received: " + e.name + " " + e.data);
@@ -47,14 +43,14 @@ public class SocketIOLogic : MonoBehaviour
 	}
 
 
-	public void foxEnter(SocketIOEvent e)
+	public void playerEnter(SocketIOEvent e)
 	{
-		Debug.Log("Fox entering from:" + e.data["side"] + " holding an item: " + e.data["holdingItem"]);
+		Debug.Log(e.data["character"] + "Fox entering from:" + e.data["side"] + " holding an item: " + e.data["holdingItem"]);
 
-	
+		string character = string.Format ("{0}", e.data ["character"]);
 
 		string tempSide = string.Format ("{0}", e.data ["side"]);
-		float side = (float.Parse (tempSide)) * 0.733f;
+		float side = (float.Parse (tempSide));
 
 		bool holdingItem = Convert.ToBoolean (e.data ["holdingItem"]);
 
