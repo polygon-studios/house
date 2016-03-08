@@ -62,7 +62,7 @@ public class SocketIOLogic : MonoBehaviour
 			
 			string tempItem = "chili";
 			
-			callingCharAnims.GetComponent<CallingCharAnimations> ().callAnimationWithItem (character, side, holdingItem, tempItem);
+			callingCharAnims.GetComponent<CallingCharAnimations> ().callAnimationWithItem (character, side, holdingItem);
 			
 			
 			if (tempItem.Contains ("bramble")) {

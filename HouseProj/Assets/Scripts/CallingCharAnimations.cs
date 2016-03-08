@@ -36,7 +36,28 @@ public class CallingCharAnimations : MonoBehaviour {
 		}
 	}
 
-	public void callAnimationWithItem(string charName, string side, string item, string itemName){
+	public void callAnimationWithItem(string charName, string side, string item){
+        foreach (GameObject characterObj in characters)
+        {
+            Character character = characterObj.GetComponent<Character>();
+            Debug.Log("Trying to animate " + character.name + " from the data: " + charName + " with: " + item);
 
-	}
+
+            if (charName.Contains(character.name))
+            {
+                Debug.Log("it contains!s");
+                if (side.Contains("right"))
+                {
+                    character.rightToLeftPlaying = true;
+
+                    Debug.Log("Right");
+                }
+                else if (side.Contains("left"))
+                {
+                    character.leftToRightBINDLEPlaying = true;
+                    Debug.Log("Left");
+                }
+            }
+        }
+    }
 }

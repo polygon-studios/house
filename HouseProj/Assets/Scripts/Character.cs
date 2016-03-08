@@ -12,20 +12,23 @@ public class Character : MonoBehaviour {
 	public KeyCode inputRight;
 	public string charID;
 
-	float itemDroppingTimer = 10;
+	float itemDroppingTimer = 3.2f;
 
 	bool startingPosSetLR = false;
 	bool startingPosSetRL = false;
 	bool startingPosSetLRB = false;
+    bool startingPosSetRLB = false;
 
-	public bool leftToRightPlaying = false;
+    public bool leftToRightPlaying = false;
 	public bool rightToLeftPlaying = false;
 	public bool leftToRightBINDLEPlaying = false;
+    public bool rightToLeftBINDLEPlaying = false;
 
-	List<Vector3> leftToRightPoints;
+    List<Vector3> leftToRightPoints;
 	List<Vector3> leftToRightBINDLEPoints;
+    List<Vector3> rightToLeftBINDLEPoints;
 
-	Animator animator;
+    Animator animator;
 	public float speed; //walk 0.5f //run 0.8f
 
 
@@ -88,28 +91,61 @@ public class Character : MonoBehaviour {
 			}
 			if(transform.position.x < leftToRightBINDLEPoints[1].x){
 				leftToRightBINDLEPlaying = true;
-				transform.position = Vector3.MoveTowards(this.transform.position, leftToRightBINDLEPoints[1], Time.deltaTime*8f);
+				transform.position = Vector3.MoveTowards(this.transform.position, leftToRightBINDLEPoints[1], Time.deltaTime*3f);
+                animator.SetBool(charID + "Bindle", true);
 			}
 			if(transform.position == leftToRightBINDLEPoints[1]){
-				animator.SetBool(charID + "ItemDrop", true);
+                animator.SetBool(charID + "Bindle", false);
+                animator.SetBool(charID + "ItemDrop", true);
 				itemDroppingTimer -= Time.deltaTime;
 			}
-
 			if(itemDroppingTimer < 0){
 				itemDroppingTimer -= Time.deltaTime;
 				animator.SetBool(charID + "ItemDrop", false);
-				transform.position = Vector3.MoveTowards(this.transform.position, leftToRightBINDLEPoints[2], Time.deltaTime*8f);
+				transform.position = Vector3.MoveTowards(this.transform.position, leftToRightBINDLEPoints[2], Time.deltaTime*3f);
 			}
-
 			if(transform.position == leftToRightBINDLEPoints[2]){
-				itemDroppingTimer = 10;
+				itemDroppingTimer = 3.2f;
 				startingPosSetLRB = false;
 				leftToRightBINDLEPlaying = false;
 			}
 		}
 
+        if (Input.GetKey(KeyCode.M) || rightToLeftBINDLEPlaying == true)
+        {
+            if (startingPosSetRLB == false)
+            {
+                this.transform.position = rightToLeftBINDLEPoints[0];
+                startingPosSetRLB = true;
+                transform.eulerAngles = new Vector2(0, 180);
+            }
+            if (transform.position.x > rightToLeftBINDLEPoints[1].x)
+            {
+                rightToLeftBINDLEPlaying = true;
+                transform.position = Vector3.MoveTowards(this.transform.position, rightToLeftBINDLEPoints[1], Time.deltaTime * 3f);
+                animator.SetBool(charID + "Bindle", true);
+            }
+            if (transform.position == rightToLeftBINDLEPoints[1])
+            {
+                animator.SetBool(charID + "Bindle", false);
+                animator.SetBool(charID + "ItemDrop", true);
+                itemDroppingTimer -= Time.deltaTime;
+            }
+            if (itemDroppingTimer < 0)
+            {
+                itemDroppingTimer -= Time.deltaTime;
+                animator.SetBool(charID + "ItemDrop", false);
+                transform.position = Vector3.MoveTowards(this.transform.position, rightToLeftBINDLEPoints[2], Time.deltaTime * 3f);
+            }
+            if (transform.position == rightToLeftBINDLEPoints[2])
+            {
+                itemDroppingTimer = 3.2f;
+                startingPosSetLRB = false;
+                rightToLeftBINDLEPlaying = false;
+            }
+        }
 
-		/*if (Input.GetKey (inputRight)) { //moving character right
+        /*if (Input.GetKey (inputRight)) { //moving character right
 			transform.Translate (speed * Time.deltaTime, 0.0f, 0.0f);
 			transform.eulerAngles = new Vector2 (0, 0);
 		}
@@ -118,18 +154,23 @@ public class Character : MonoBehaviour {
 			transform.Translate(speed * Time.deltaTime, 0.0f, 0.0f);
 			transform.eulerAngles = new Vector2(0, 180);
 		}*/
-	}
+    }
 
 	void updateAnimationPoints(){
 		leftToRightPoints = new List<Vector3> ();
-		leftToRightPoints.Add (new Vector3 (-21f, -17f, 0f));
-		leftToRightPoints.Add (new Vector3 (21.85f, -17f, 0f));
+		leftToRightPoints.Add (new Vector3 (-8f, -6.3f, 0f));
+		leftToRightPoints.Add (new Vector3 (8f, -6.3f, 0f));
 
 		leftToRightBINDLEPoints = new List<Vector3> ();
-		leftToRightBINDLEPoints.Add(new Vector3 (-21f, -17f, 0f));
-		leftToRightBINDLEPoints.Add(new Vector3 (-4.2f, -17f, 0f));
-		leftToRightBINDLEPoints.Add (new Vector3 (21.85f, -17f, 0f));
-	}
+		leftToRightBINDLEPoints.Add(new Vector3 (-8f, -6.3f, 0f));
+		leftToRightBINDLEPoints.Add(new Vector3 (-1.6f, -6.3f, 0f));
+		leftToRightBINDLEPoints.Add (new Vector3 (8f, -6.3f, 0f));
+
+        rightToLeftBINDLEPoints = new List<Vector3>();
+        rightToLeftBINDLEPoints.Add(new Vector3(8f, -6.3f, 0f));
+        rightToLeftBINDLEPoints.Add(new Vector3(1.6f, -6.3f, 0f));
+        rightToLeftBINDLEPoints.Add(new Vector3(-8f, -6.3f, 0f));
+    }
 
 
 }
