@@ -19,4 +19,11 @@ public class houseExt : MonoBehaviour {
 			renderer.color = new Color(1f, 1f, 1f, 1f);
 		}
 	}
+	public void changeToInt(){
+		renderer.color = new Color(1f, 1f, 1f, 0f);
+	}
+
+	public void changeToExt(){
+		renderer.color = new Color(1f, 1f, 1f, 1f);
+	}
 }
