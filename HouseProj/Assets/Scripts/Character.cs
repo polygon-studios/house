@@ -11,7 +11,7 @@ public class Character : MonoBehaviour {
 	public KeyCode inputLeft;
 	public KeyCode inputRight;
 	public string charID;
-	public houseExt house;
+	
 
 	float itemDroppingTimer = 3.2f;
 
@@ -24,6 +24,8 @@ public class Character : MonoBehaviour {
 	public bool rightToLeftPlaying = false;
 	public bool leftToRightBINDLEPlaying = false;
     public bool rightToLeftBINDLEPlaying = false;
+
+    public bool isInHouse;
 
     List<Vector3> leftToRightPoints;
 	List<Vector3> leftToRightBINDLEPoints;
@@ -52,7 +54,8 @@ public class Character : MonoBehaviour {
 				this.transform.position = leftToRightPoints[0];
 				startingPosSetLR = true;
 				transform.eulerAngles = new Vector2(0, 0);
-				house.changeToInt();
+                isInHouse = true;
+				
 			}
 			leftToRightPlaying=true;
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[1], Time.deltaTime*8f);
@@ -60,8 +63,8 @@ public class Character : MonoBehaviour {
 			if(transform.position == leftToRightPoints[1]){
 				startingPosSetLR = false;
 				leftToRightPlaying = false;
-				house.changeToExt();
-			}
+                isInHouse = false;
+            }
 		}
 		
 		if(Input.GetKey(KeyCode.K) || rightToLeftPlaying == true){
@@ -69,8 +72,8 @@ public class Character : MonoBehaviour {
 				this.transform.position = leftToRightPoints[1];
 				startingPosSetRL = true;
 				transform.eulerAngles = new Vector2(0, 180);
-				house.changeToInt();
-			}
+                isInHouse = true;
+            }
 			rightToLeftPlaying=true;
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[0], Time.deltaTime*8f);
 			
@@ -78,13 +81,13 @@ public class Character : MonoBehaviour {
 			if(transform.position == leftToRightPoints[0]){
 				startingPosSetRL = false;
 				rightToLeftPlaying = false;
-				house.changeToExt();
+                isInHouse = false;
 			}
 		}
 	}
 
 	void Movement(){
-		animator.SetFloat ("foxMoveSpeed", Mathf.Abs (Input.GetAxis ("Horizontal")));
+		animator.SetFloat (charID + "MoveSpeed", Mathf.Abs (Input.GetAxis ("Horizontal")));
        
 
 
@@ -93,8 +96,8 @@ public class Character : MonoBehaviour {
 				this.transform.position = leftToRightBINDLEPoints[0];
 				startingPosSetLRB = true;
 				transform.eulerAngles = new Vector2 (0, 0);
-				house.changeToInt();
-			}
+                isInHouse = true;
+            }
 			if(transform.position.x < leftToRightBINDLEPoints[1].x){
 				leftToRightBINDLEPlaying = true;
 				transform.position = Vector3.MoveTowards(this.transform.position, leftToRightBINDLEPoints[1], Time.deltaTime*3f);
@@ -114,7 +117,7 @@ public class Character : MonoBehaviour {
 				itemDroppingTimer = 3.2f;
 				startingPosSetLRB = false;
 				leftToRightBINDLEPlaying = false;
-				house.changeToExt();
+                isInHouse = false;
 			}
 		}
 
@@ -125,7 +128,7 @@ public class Character : MonoBehaviour {
                 this.transform.position = rightToLeftBINDLEPoints[0];
                 startingPosSetRLB = true;
                 transform.eulerAngles = new Vector2(0, 180);
-				house.changeToInt();
+                isInHouse = true;
             }
             if (transform.position.x > rightToLeftBINDLEPoints[1].x)
             {
@@ -150,7 +153,7 @@ public class Character : MonoBehaviour {
                 itemDroppingTimer = 3.2f;
                 startingPosSetLRB = false;
                 rightToLeftBINDLEPlaying = false;
-				house.changeToExt();
+                isInHouse = false;
             }
         }
 

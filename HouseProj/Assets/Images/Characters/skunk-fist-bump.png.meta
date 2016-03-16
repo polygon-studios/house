@@ -1,0 +1,1447 @@
+fileFormatVersion: 2
+guid: 3e8216cf7929b294aad93b01631c1fee
+timeCreated: 1458076826
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skunk-fist-bump_0
+    21300002: skunk-fist-bump_1
+    21300004: skunk-fist-bump_2
+    21300006: skunk-fist-bump_3
+    21300008: skunk-fist-bump_4
+    21300010: skunk-fist-bump_5
+    21300012: skunk-fist-bump_6
+    21300014: skunk-fist-bump_7
+    21300016: skunk-fist-bump_8
+    21300018: skunk-fist-bump_9
+    21300020: skunk-fist-bump_10
+    21300022: skunk-fist-bump_11
+    21300024: skunk-fist-bump_12
+    21300026: skunk-fist-bump_13
+    21300028: skunk-fist-bump_14
+    21300030: skunk-fist-bump_15
+    21300032: skunk-fist-bump_16
+    21300034: skunk-fist-bump_17
+    21300036: skunk-fist-bump_18
+    21300038: skunk-fist-bump_19
+    21300040: skunk-fist-bump_20
+    21300042: skunk-fist-bump_21
+    21300044: skunk-fist-bump_22
+    21300046: skunk-fist-bump_23
+    21300048: skunk-fist-bump_24
+    21300050: skunk-fist-bump_25
+    21300052: skunk-fist-bump_26
+    21300054: skunk-fist-bump_27
+    21300056: skunk-fist-bump_28
+    21300058: skunk-fist-bump_29
+    21300060: skunk-fist-bump_30
+    21300062: skunk-fist-bump_31
+    21300064: skunk-fist-bump_32
+    21300066: skunk-fist-bump_33
+    21300068: skunk-fist-bump_34
+    21300070: skunk-fist-bump_35
+    21300072: skunk-fist-bump_36
+    21300074: skunk-fist-bump_37
+    21300076: skunk-fist-bump_38
+    21300078: skunk-fist-bump_39
+    21300080: skunk-fist-bump_40
+    21300082: skunk-fist-bump_41
+    21300084: skunk-fist-bump_42
+    21300086: skunk-fist-bump_43
+    21300088: skunk-fist-bump_44
+    21300090: skunk-fist-bump_45
+    21300092: skunk-fist-bump_46
+    21300094: skunk-fist-bump_47
+    21300096: skunk-fist-bump_48
+    21300098: skunk-fist-bump_49
+    21300100: skunk-fist-bump_50
+    21300102: skunk-fist-bump_51
+    21300104: skunk-fist-bump_52
+    21300106: skunk-fist-bump_53
+    21300108: skunk-fist-bump_54
+    21300110: skunk-fist-bump_55
+    21300112: skunk-fist-bump_56
+    21300114: skunk-fist-bump_57
+    21300116: skunk-fist-bump_58
+    21300118: skunk-fist-bump_59
+    21300120: skunk-fist-bump_60
+    21300122: skunk-fist-bump_61
+    21300124: skunk-fist-bump_62
+    21300126: skunk-fist-bump_63
+    21300128: skunk-fist-bump_64
+    21300130: skunk-fist-bump_65
+    21300132: skunk-fist-bump_66
+    21300134: skunk-fist-bump_67
+    21300136: skunk-fist-bump_68
+    21300138: skunk-fist-bump_69
+    21300140: skunk-fist-bump_70
+    21300142: skunk-fist-bump_71
+    21300144: skunk-fist-bump_72
+    21300146: skunk-fist-bump_73
+    21300148: skunk-fist-bump_74
+    21300150: skunk-fist-bump_75
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: skunk-fist-bump_0
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_1
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_2
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_3
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_4
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_5
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_6
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_7
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2031
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1698
+        width: 250
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 121, y: 78}
+        - {x: 49, y: 158}
+        - {x: -125, y: 158}
+        - {x: -125, y: 38}
+        - {x: -64, y: 32}
+        - {x: -56, y: -70}
+        - {x: -43, y: -158}
+        - {x: 55, y: -158}
+        - {x: 76, y: -24}
+        - {x: 125, y: 5}
+        - {x: 125, y: 34}
+      - - {x: 99, y: -77}
+        - {x: 97, y: -79}
+        - {x: 97, y: -96}
+        - {x: 99, y: -98}
+        - {x: 116, y: -98}
+        - {x: 118, y: -96}
+        - {x: 118, y: -79}
+        - {x: 116, y: -77}
+    - name: skunk-fist-bump_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1760
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_10
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1698
+        width: 250
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 94, y: 112}
+        - {x: 49, y: 159}
+        - {x: -32, y: 159}
+        - {x: -50, y: 158}
+        - {x: -66, y: 159}
+        - {x: -125, y: 159}
+        - {x: -125, y: 66}
+        - {x: -120, y: 49}
+        - {x: -43, y: 62}
+        - {x: -56, y: -71}
+        - {x: -43, y: -159}
+        - {x: 55, y: -159}
+        - {x: 76, y: -25}
+        - {x: 125, y: 4}
+        - {x: 125, y: 39}
+      - - {x: 99, y: -78}
+        - {x: 97, y: -80}
+        - {x: 97, y: -97}
+        - {x: 99, y: -99}
+        - {x: 116, y: -99}
+        - {x: 118, y: -97}
+        - {x: 118, y: -80}
+        - {x: 116, y: -78}
+    - name: skunk-fist-bump_11
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1760
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_12
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1698
+        width: 250
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -117, y: 158}
+        - {x: -117, y: 155}
+        - {x: -125, y: 132}
+        - {x: -125, y: 76}
+        - {x: -116, y: 56}
+        - {x: -65, y: 59}
+        - {x: -48, y: 72}
+        - {x: -55, y: -60}
+        - {x: -47, y: -158}
+        - {x: 59, y: -158}
+        - {x: 125, y: -1}
+        - {x: 125, y: 83}
+        - {x: 53, y: 158}
+      - - {x: 99, y: -77}
+        - {x: 97, y: -79}
+        - {x: 97, y: -96}
+        - {x: 99, y: -98}
+        - {x: 116, y: -98}
+        - {x: 118, y: -96}
+        - {x: 118, y: -79}
+        - {x: 116, y: -77}
+    - name: skunk-fist-bump_13
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1760
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_14
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1698
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 107, y: 95.5}
+        - {x: 32, y: 157.5}
+        - {x: -16, y: 157.5}
+        - {x: -24, y: 141.5}
+        - {x: -83, y: 157.5}
+        - {x: -118, y: 157.5}
+        - {x: -123, y: 156.5}
+        - {x: -125, y: 148.5}
+        - {x: -125, y: 76.5}
+        - {x: -116, y: 55.5}
+        - {x: -45, y: 40.5}
+        - {x: -54, y: -69.5}
+        - {x: -44, y: -157.5}
+        - {x: 52, y: -157.5}
+        - {x: 61, y: -143.5}
+        - {x: 125, y: -22.5}
+        - {x: 125, y: 43.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_15
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1760
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_17
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_18
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_19
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_20
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_21
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_22
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_23
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1652
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1319
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 157.5}
+        - {x: -125, y: 157.5}
+        - {x: -125, y: 70.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -45, y: 16.5}
+        - {x: -55, y: -69.5}
+        - {x: -44, y: -157.5}
+        - {x: 52, y: -157.5}
+        - {x: 80, y: -134.5}
+        - {x: 125, y: -10.5}
+        - {x: 125, y: 107.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_25
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1381
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_26
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1319
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -125, y: 157.5}
+        - {x: -125, y: 70.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -45, y: 16.5}
+        - {x: -55, y: -69.5}
+        - {x: -44, y: -157.5}
+        - {x: 52, y: -157.5}
+        - {x: 125, y: -73.5}
+        - {x: 125, y: 89.5}
+        - {x: 69, y: 157.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_27
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1381
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_28
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1319
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 125, y: 146.5}
+        - {x: 94, y: 157.5}
+        - {x: -125, y: 157.5}
+        - {x: -125, y: 62.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -57, y: 12.5}
+        - {x: -52, y: -157.5}
+        - {x: 51, y: -157.5}
+        - {x: 51, y: -148.5}
+        - {x: 62, y: -79.5}
+        - {x: 125, y: -11.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_29
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1381
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_30
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1319
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 119, y: 157.5}
+        - {x: -125, y: 157.5}
+        - {x: -125, y: 62.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -57, y: 12.5}
+        - {x: -52, y: -157.5}
+        - {x: 55, y: -157.5}
+        - {x: 71, y: -153.5}
+        - {x: 125, y: -10.5}
+        - {x: 125, y: 155.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_31
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1381
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_32
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_33
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_34
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_35
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_36
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_37
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_38
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_39
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1273
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 940
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122, y: 157.5}
+        - {x: -125, y: 153.5}
+        - {x: -125, y: 62.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -57, y: 12.5}
+        - {x: -52, y: -157.5}
+        - {x: 55, y: -157.5}
+        - {x: 125, y: -144.5}
+        - {x: 125, y: 157.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_41
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1002
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_42
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 940
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 111, y: 32.5}
+        - {x: 91, y: 72.5}
+        - {x: 77, y: 65.5}
+        - {x: 73, y: 60.5}
+        - {x: 73, y: 56.5}
+        - {x: 72, y: 60.5}
+        - {x: 75, y: 62.5}
+        - {x: 100, y: 92.5}
+        - {x: 86, y: 150.5}
+        - {x: 53, y: 157.5}
+        - {x: -122, y: 157.5}
+        - {x: -123, y: 156.5}
+        - {x: -125, y: 151.5}
+        - {x: -125, y: 70.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -57, y: 12.5}
+        - {x: -52, y: -157.5}
+        - {x: 52, y: -157.5}
+        - {x: 57, y: -148.5}
+        - {x: 125, y: 0.5}
+        - {x: 125, y: 26.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_43
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1002
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_44
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 940
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -125, y: 157.5}
+        - {x: -125, y: 70.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -57, y: 12.5}
+        - {x: -52, y: -157.5}
+        - {x: 118, y: -157.5}
+        - {x: 125, y: -124.5}
+        - {x: 125, y: 157.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_45
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1002
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_46
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 940
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -125, y: 157.5}
+        - {x: -125, y: 70.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -47, y: 77.5}
+        - {x: -45, y: 82.5}
+        - {x: -45, y: 85.5}
+        - {x: -44, y: 86.5}
+        - {x: -39, y: 93.5}
+        - {x: -47, y: 78.5}
+        - {x: -47, y: 75.5}
+        - {x: -57, y: 12.5}
+        - {x: -52, y: -157.5}
+        - {x: 52, y: -157.5}
+        - {x: 125, y: -77.5}
+        - {x: 125, y: 77.5}
+        - {x: 61, y: 157.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_47
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1002
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_48
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_49
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_50
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_51
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_52
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_53
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_54
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_55
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 894
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 157.5}
+        - {x: -125, y: 157.5}
+        - {x: -125, y: 70.5}
+        - {x: -111, y: 44.5}
+        - {x: -66, y: 61.5}
+        - {x: -49, y: 73.5}
+        - {x: -45, y: 82.5}
+        - {x: -44, y: 86.5}
+        - {x: -46, y: 78.5}
+        - {x: -55, y: 14.5}
+        - {x: -54, y: -157.5}
+        - {x: 55, y: -157.5}
+        - {x: 96, y: -36.5}
+        - {x: 125, y: 0.5}
+        - {x: 125, y: 80.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_57
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 623
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_58
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 561
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 109, y: 62.5}
+        - {x: 104, y: 88.5}
+        - {x: 85, y: 139.5}
+        - {x: 22, y: 157.5}
+        - {x: -118, y: 157.5}
+        - {x: -123, y: 156.5}
+        - {x: -125, y: 148.5}
+        - {x: -125, y: 76.5}
+        - {x: -116, y: 55.5}
+        - {x: -41, y: 61.5}
+        - {x: -56, y: -69.5}
+        - {x: -43, y: -157.5}
+        - {x: 54, y: -157.5}
+        - {x: 89, y: -31.5}
+        - {x: 125, y: -17.5}
+        - {x: 125, y: 41.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_59
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 623
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_60
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 561
+        width: 250
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 100, y: 35.5}
+        - {x: 70, y: 50.5}
+        - {x: 70, y: 49.5}
+        - {x: 72, y: 50.5}
+        - {x: 125, y: 67.5}
+        - {x: 125, y: 89.5}
+        - {x: 81, y: 157.5}
+        - {x: -125, y: 157.5}
+        - {x: -125, y: 76.5}
+        - {x: -117, y: 56.5}
+        - {x: -44, y: -157.5}
+        - {x: 55, y: -157.5}
+        - {x: 125, y: -3.5}
+        - {x: 125, y: 26.5}
+        - {x: 111, y: 32.5}
+      - - {x: 99, y: -76.5}
+        - {x: 97, y: -78.5}
+        - {x: 97, y: -95.5}
+        - {x: 99, y: -97.5}
+        - {x: 116, y: -97.5}
+        - {x: 118, y: -95.5}
+        - {x: 118, y: -78.5}
+        - {x: 116, y: -76.5}
+    - name: skunk-fist-bump_61
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 623
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_62
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 561
+        width: 250
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 125, y: 29}
+        - {x: 111, y: 90}
+        - {x: 49, y: 158}
+        - {x: -125, y: 158}
+        - {x: -125, y: 76}
+        - {x: -116, y: 56}
+        - {x: -65, y: 59}
+        - {x: -48, y: 72}
+        - {x: -56, y: -70}
+        - {x: -43, y: -158}
+        - {x: 41, y: -158}
+        - {x: 48, y: -155}
+        - {x: 57, y: -148}
+        - {x: 125, y: 0}
+      - - {x: 99, y: -77}
+        - {x: 97, y: -79}
+        - {x: 97, y: -96}
+        - {x: 99, y: -98}
+        - {x: 116, y: -98}
+        - {x: 118, y: -96}
+        - {x: 118, y: -79}
+        - {x: 116, y: -77}
+    - name: skunk-fist-bump_63
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 623
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_64
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 515
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_65
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 515
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_66
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 515
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_67
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 515
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_68
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 515
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_69
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 515
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 250
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: -23.5}
+        - {x: 65, y: -22.5}
+        - {x: 62, y: -22.5}
+        - {x: 66, y: -22.5}
+        - {x: 76, y: -24.5}
+        - {x: 125, y: 4.5}
+        - {x: 125, y: 54.5}
+        - {x: 72, y: 158.5}
+        - {x: -125, y: 158.5}
+        - {x: -125, y: 75.5}
+        - {x: -116, y: 55.5}
+        - {x: -65, y: 58.5}
+        - {x: -56, y: -70.5}
+        - {x: -43, y: -158.5}
+        - {x: 41, y: -158.5}
+        - {x: 48, y: -155.5}
+        - {x: 57, y: -148.5}
+        - {x: 85, y: -32.5}
+      - - {x: 99, y: -77.5}
+        - {x: 97, y: -79.5}
+        - {x: 97, y: -96.5}
+        - {x: 99, y: -98.5}
+        - {x: 116, y: -98.5}
+        - {x: 118, y: -96.5}
+        - {x: 118, y: -79.5}
+        - {x: 116, y: -77.5}
+    - name: skunk-fist-bump_71
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 244
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_72
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 182
+        width: 250
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: 159}
+        - {x: -30, y: 159}
+        - {x: -48, y: 157}
+        - {x: -71, y: 159}
+        - {x: -125, y: 159}
+        - {x: -125, y: 64}
+        - {x: -120, y: 48}
+        - {x: -50, y: 33}
+        - {x: -56, y: -71}
+        - {x: -46, y: -159}
+        - {x: 58, y: -159}
+        - {x: 77, y: -24}
+        - {x: 125, y: 1}
+        - {x: 125, y: 83}
+      - - {x: 99, y: -78}
+        - {x: 97, y: -80}
+        - {x: 97, y: -97}
+        - {x: 99, y: -99}
+        - {x: 116, y: -99}
+        - {x: 118, y: -97}
+        - {x: 118, y: -80}
+        - {x: 116, y: -78}
+    - name: skunk-fist-bump_73
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 244
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: skunk-fist-bump_74
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 182
+        width: 250
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 125, y: 25.5}
+        - {x: 113, y: 37.5}
+        - {x: 100, y: 34.5}
+        - {x: 74, y: 47.5}
+        - {x: 74, y: 46.5}
+        - {x: 76, y: 47.5}
+        - {x: 106, y: 73.5}
+        - {x: 107, y: 79.5}
+        - {x: 102, y: 129.5}
+        - {x: 43, y: 158.5}
+        - {x: -125, y: 158.5}
+        - {x: -125, y: 20.5}
+        - {x: -44, y: -158.5}
+        - {x: 41, y: -158.5}
+        - {x: 48, y: -155.5}
+        - {x: 66, y: -145.5}
+        - {x: 125, y: -43.5}
+      - - {x: 99, y: -77.5}
+        - {x: 97, y: -79.5}
+        - {x: 97, y: -96.5}
+        - {x: 99, y: -98.5}
+        - {x: 116, y: -98.5}
+        - {x: 118, y: -96.5}
+        - {x: 118, y: -79.5}
+        - {x: 116, y: -77.5}
+    - name: skunk-fist-bump_75
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 244
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

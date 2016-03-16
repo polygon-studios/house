@@ -5,9 +5,10 @@ using System.Collections.Generic;
 public class CallingCharAnimations : MonoBehaviour {
 
 	public List<GameObject> characters;
+    
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
