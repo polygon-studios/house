@@ -49,7 +49,7 @@ public class CallingCharAnimations : MonoBehaviour {
                 Debug.Log("it contains!s");
                 if (side.Contains("right"))
                 {
-                    character.rightToLeftPlaying = true;
+                    character.rightToLeftBINDLEPlaying = true;
 
                     Debug.Log("Right");
                 }

@@ -171,15 +171,15 @@ public class Character : MonoBehaviour {
 	void updateAnimationPoints(){
 		leftToRightPoints = new List<Vector3> ();
 		leftToRightPoints.Add (new Vector3 (-8f, -6.3f, 0f));
-		leftToRightPoints.Add (new Vector3 (8f, -6.3f, 0f));
+		leftToRightPoints.Add (new Vector3 (8.5f, -6.3f, 0f));
 
 		leftToRightBINDLEPoints = new List<Vector3> ();
 		leftToRightBINDLEPoints.Add(new Vector3 (-8f, -6.3f, 0f));
 		leftToRightBINDLEPoints.Add(new Vector3 (-1.6f, -6.3f, 0f));
-		leftToRightBINDLEPoints.Add (new Vector3 (8f, -6.3f, 0f));
+		leftToRightBINDLEPoints.Add (new Vector3 (8.5f, -6.3f, 0f));
 
         rightToLeftBINDLEPoints = new List<Vector3>();
-        rightToLeftBINDLEPoints.Add(new Vector3(8f, -6.3f, 0f));
+        rightToLeftBINDLEPoints.Add(new Vector3(8.5f, -6.3f, 0f));
         rightToLeftBINDLEPoints.Add(new Vector3(1.6f, -6.3f, 0f));
         rightToLeftBINDLEPoints.Add(new Vector3(-8f, -6.3f, 0f));
     }
