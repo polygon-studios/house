@@ -24,7 +24,8 @@ public class CallingCharAnimations : MonoBehaviour {
 
 
 			if(charName.Contains (character.name)){
-				Debug.Log("it contains!s");
+                character.resetAni();
+                Debug.Log("it contains!s");
 				if(side.Contains("right")){
 					character.rightToLeftPlaying = true;
 					
@@ -46,11 +47,12 @@ public class CallingCharAnimations : MonoBehaviour {
 
             if (charName.Contains(character.name))
             {
+                character.resetAni();
+                character.currentItem = item;
                 Debug.Log("it contains!s");
                 if (side.Contains("right"))
                 {
                     character.rightToLeftBINDLEPlaying = true;
-
                     Debug.Log("Right");
                 }
                 else if (side.Contains("left"))

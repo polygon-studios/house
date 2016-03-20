@@ -11,11 +11,26 @@ public class Character : MonoBehaviour {
 	public KeyCode inputLeft;
 	public KeyCode inputRight;
 	public string charID;
-	
 
+    //itemAnimations
+    public GameObject slippersPrefab;
+    public GameObject chiliPrefab;
+    public GameObject pinwheelPrefab;
+    public GameObject prunePrefab;
+    public GameObject treasurePrefab;
+    public GameObject fireworkPrefab;
+    public GameObject oilPrefab;
+    public GameObject fishPrefab;
+    public GameObject ghostPrefab;
+    GameObject currentItemObj;
+    public string currentItem;
+
+    //moving and playing animations
+    float savedItemDropperTimer = 3.2f;
 	float itemDroppingTimer = 3.2f;
+    bool itemDropAniPlaying = false;
 
-	bool startingPosSetLR = false;
+    bool startingPosSetLR = false;
 	bool startingPosSetRL = false;
 	bool startingPosSetLRB = false;
     bool startingPosSetRLB = false;
@@ -39,6 +54,7 @@ public class Character : MonoBehaviour {
 	void Start () {
 		animator = this.gameObject.GetComponent<Animator> ();
 		updateAnimationPoints ();
+        savedItemDropperTimer = itemDroppingTimer;
 	}
 	
 	// Update is called once per frame
@@ -61,9 +77,8 @@ public class Character : MonoBehaviour {
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[1], Time.deltaTime*8f);
 			
 			if(transform.position == leftToRightPoints[1]){
-				startingPosSetLR = false;
-				leftToRightPlaying = false;
                 isInHouse = false;
+                resetAni();
             }
 		}
 		
@@ -79,9 +94,8 @@ public class Character : MonoBehaviour {
 			
 			
 			if(transform.position == leftToRightPoints[0]){
-				startingPosSetRL = false;
-				rightToLeftPlaying = false;
                 isInHouse = false;
+                resetAni();
 			}
 		}
 	}
@@ -92,6 +106,7 @@ public class Character : MonoBehaviour {
 
 
 		if (Input.GetKey (KeyCode.N) || leftToRightBINDLEPlaying == true) {
+            
 			if(startingPosSetLRB == false){
 				this.transform.position = leftToRightBINDLEPoints[0];
 				startingPosSetLRB = true;
@@ -107,6 +122,13 @@ public class Character : MonoBehaviour {
                 animator.SetBool(charID + "Bindle", false);
                 animator.SetBool(charID + "ItemDrop", true);
 				itemDroppingTimer -= Time.deltaTime;
+
+                //play animation
+                if (itemDropAniPlaying == false)
+                {
+                    playItemDrop(true);
+                    itemDropAniPlaying = true;
+                }
 			}
 			if(itemDroppingTimer < 0){
 				itemDroppingTimer -= Time.deltaTime;
@@ -114,10 +136,13 @@ public class Character : MonoBehaviour {
 				transform.position = Vector3.MoveTowards(this.transform.position, leftToRightBINDLEPoints[2], Time.deltaTime*3f);
 			}
 			if(transform.position == leftToRightBINDLEPoints[2]){
-				itemDroppingTimer = 3.2f;
-				startingPosSetLRB = false;
-				leftToRightBINDLEPlaying = false;
                 isInHouse = false;
+                resetAni();
+
+                if(currentItemObj != null)
+                {
+                    Destroy(currentItemObj);
+                }
 			}
 		}
 
@@ -129,6 +154,7 @@ public class Character : MonoBehaviour {
                 startingPosSetRLB = true;
                 transform.eulerAngles = new Vector2(0, 180);
                 isInHouse = true;
+                Debug.Log("HERE");
             }
             if (transform.position.x > rightToLeftBINDLEPoints[1].x)
             {
@@ -141,6 +167,13 @@ public class Character : MonoBehaviour {
                 animator.SetBool(charID + "Bindle", false);
                 animator.SetBool(charID + "ItemDrop", true);
                 itemDroppingTimer -= Time.deltaTime;
+
+                //play animation
+                if (itemDropAniPlaying == false)
+                {
+                    playItemDrop(false);
+                    itemDropAniPlaying = true;
+                }
             }
             if (itemDroppingTimer < 0)
             {
@@ -150,10 +183,13 @@ public class Character : MonoBehaviour {
             }
             if (transform.position == rightToLeftBINDLEPoints[2])
             {
-                itemDroppingTimer = 3.2f;
-                startingPosSetLRB = false;
-                rightToLeftBINDLEPlaying = false;
                 isInHouse = false;
+                resetAni();
+
+                if (currentItemObj != null)
+                {
+                    Destroy(currentItemObj);
+                }
             }
         }
 
@@ -168,6 +204,71 @@ public class Character : MonoBehaviour {
 		}*/
     }
 
+    public void resetAni()
+    {
+        leftToRightBINDLEPlaying = false;
+        rightToLeftBINDLEPlaying = false;
+        leftToRightPlaying = false;
+        rightToLeftPlaying = false;
+       // Vector3 resetPos = new Vector3(leftToRightPoints[0].x, leftToRightPoints[0].y, )
+        transform.position = leftToRightPoints[0];
+
+        startingPosSetLR = false;
+        startingPosSetRL = false;
+        startingPosSetRLB = false;
+        startingPosSetLRB = false;
+        isInHouse = false;
+        itemDroppingTimer = savedItemDropperTimer;
+        itemDropAniPlaying = false;
+
+        /*if (currentItemObj != null)
+        {
+            Destroy(currentItemObj);
+        }*/
+
+    }
+
+    void playItemDrop(bool isLeft)
+    {
+        Vector3 itemPos;
+        if (isLeft == true)
+            itemPos = new Vector3(-0.9f, -4.84f, 0);
+        else {
+            itemPos = new Vector3(1.3f, -4.84f, 0);
+            
+        }
+
+        if (currentItem.Contains("slippers"))
+            currentItemObj = (GameObject)Instantiate(slippersPrefab, itemPos, Quaternion.identity);
+        else if(currentItem.Contains("chili"))
+            currentItemObj = (GameObject)Instantiate(chiliPrefab, itemPos, Quaternion.identity);
+        else if(currentItem.Contains("treasure"))
+            currentItemObj = (GameObject)Instantiate(treasurePrefab, itemPos, Quaternion.identity);
+        else if(currentItem.Contains("firework"))
+            currentItemObj = (GameObject)Instantiate(fireworkPrefab, itemPos, Quaternion.identity);
+        else if(currentItem.Contains("ghost"))
+            currentItemObj = (GameObject)Instantiate(ghostPrefab, itemPos, Quaternion.identity);
+        else if(currentItem.Contains("oil"))
+            currentItemObj = (GameObject)Instantiate(oilPrefab, itemPos, Quaternion.identity);
+        else if(currentItem.Contains("pinwheel"))
+            currentItemObj = (GameObject)Instantiate(pinwheelPrefab, itemPos, Quaternion.identity);
+        else if (currentItem.Contains("fish"))
+            currentItemObj = (GameObject)Instantiate(fishPrefab, itemPos, Quaternion.identity);
+        else 
+            currentItemObj = (GameObject)Instantiate(prunePrefab, itemPos, Quaternion.identity);
+        
+        if(isLeft == true)
+            currentItemObj.transform.eulerAngles = new Vector2(0, 0);
+        else
+            currentItemObj.transform.eulerAngles = new Vector2(0, 180);
+    }
+
+    void playItemDropRight()
+    {
+        currentItemObj = (GameObject)Instantiate(slippersPrefab, new Vector3(0.76f, -6.18f, 0), Quaternion.identity);
+        currentItemObj.transform.eulerAngles = new Vector2(0, 180);
+    }
+
 	void updateAnimationPoints(){
 		leftToRightPoints = new List<Vector3> ();
 		leftToRightPoints.Add (new Vector3 (-8f, -6.3f, 0f));
@@ -180,7 +281,7 @@ public class Character : MonoBehaviour {
 
         rightToLeftBINDLEPoints = new List<Vector3>();
         rightToLeftBINDLEPoints.Add(new Vector3(8.5f, -6.3f, 0f));
-        rightToLeftBINDLEPoints.Add(new Vector3(1.6f, -6.3f, 0f));
+        rightToLeftBINDLEPoints.Add(new Vector3(2.1f, -6.3f, 0f));
         rightToLeftBINDLEPoints.Add(new Vector3(-8f, -6.3f, 0f));
     }
 
