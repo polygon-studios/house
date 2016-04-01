@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using SocketIO;
 using System;
 using System.IO;
@@ -10,6 +11,7 @@ public class SocketIOLogic : MonoBehaviour
 {
 	private SocketIOComponent socket;
 	public GameObject callingCharAnims;
+	public houseExt houseE;
 	int side;
 	
 	public void Start()
@@ -23,11 +25,13 @@ public class SocketIOLogic : MonoBehaviour
 		socket.On("error", SocketError);
 		socket.On("close", SocketClose);
 		socket.On("playerEnter", playerEnter);
+		socket.On("redButton", redButton);
+		socket.On ("endGame", endGame);
+		socket.On ("resetHouse", resetHouse);
 	}
 	
 	public void Update()
 	{
-
 	}
 	
 
@@ -73,7 +77,29 @@ public class SocketIOLogic : MonoBehaviour
 
 	}
 
+	public void redButton(SocketIOEvent e)
+	{
+		houseE.showJailBars ();
+	}
 
+	public void endGame (SocketIOEvent e){
+		
+		string first = string.Format ("{0}", e.data ["first"]);
+		string second = string.Format ("{0}", e.data ["second"]);
+		string third = string.Format ("{0}", e.data ["third"]);
+		string fourth = string.Format ("{0}", e.data ["fourth"]);
+
+		callingCharAnims.GetComponent<CallingCharAnimations> ().sleepingAnimations (first, second, third, fourth);
+
+	}
+
+	public void resetHouse (SocketIOEvent e){
+		SceneManager.LoadScene (0);
+	}
+
+	public void resetGame (){
+		
+	}
 	
 	/*
 	 *

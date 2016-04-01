@@ -6,14 +6,21 @@ public class houseExt : MonoBehaviour {
 
     public List<GameObject> characters;
     public GameObject jailbars;
+	public GameObject jailbarsSideLeft;
+	public GameObject jailbarsSideRight;
     public GameObject darkExt;
     public GameObject darkInt;
     public GameObject interior;
     SpriteRenderer spriteRenderer;
 
     bool isDark;
+	public bool isInHouse;
     GameObject currentExt;
     GameObject currentInt;
+
+	//jail
+	float jailTimer = 7;
+	bool jailActive = false;
 
 	// Use this for initialization
 	void Start () {
@@ -45,11 +52,20 @@ public class houseExt : MonoBehaviour {
             if (charObj.gameObject.GetComponent<Character>().isInHouse == true)
                 isStillInside = true;
         }
+		/*foreach (GameObject sleepingChar in sleepinCharacters)
+		{
+			if (charObj.gameObject.GetComponent<Character>().isInHouse == true)
+				isStillInside = true;
+		}*/
 
         if (isStillInside == false)
             changeToExt();
         else
             changeToInt();
+
+		if (Input.GetKey (KeyCode.J) || jailActive == true) {
+			showJailBars ();
+		}
     }
 
     public void goDark()
@@ -70,14 +86,29 @@ public class houseExt : MonoBehaviour {
             spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
 	}
 
-    void showJailBars()
+    public void showJailBars()
     {
-        jailbars.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+		Animator jailAnimator = jailbars.GetComponent<Animator> ();
+		jailAnimator.SetBool ("jailBarsOut", false);
+		jailAnimator.SetBool ("jailBarsIn", true);
+
+		jailActive = true;
+		jailTimer -= Time.deltaTime;
+
+		if (jailTimer < 0)
+			hideJailBars ();
+        //jailbars.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
     }
 
     void hideJailBars()
     {
-        jailbars.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+		jailActive = false;
+		Animator jailAnimator = jailbars.GetComponent<Animator> ();
+		jailAnimator.SetBool ("jailBarsIn", false);
+		jailAnimator.SetBool ("jailBarsOut", true);
+
+		jailTimer = 7;
+        //jailbars.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
 }

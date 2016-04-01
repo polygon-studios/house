@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class CallingCharAnimations : MonoBehaviour {
 
 	public List<GameObject> characters;
+	public List<GameObject> sleepingCharacters;
     
 
     // Use this for initialization
@@ -63,4 +64,25 @@ public class CallingCharAnimations : MonoBehaviour {
             }
         }
     }
+
+
+	public void sleepingAnimations(string first, string second, string third, string fourth){
+		foreach (GameObject character in sleepingCharacters) {
+			SleepingChar sleepChar = character.GetComponent<SleepingChar> ();
+			int ranking = 5;
+
+			//0,1,2,3 for conversion to match with an array
+
+			if (first.Contains (sleepChar.charID))
+				ranking = 0;
+			else if (second.Contains (sleepChar.charID))
+				ranking = 1;
+			else if (third.Contains (sleepChar.charID))
+				ranking = 2;
+			else if (fourth.Contains (sleepChar.charID))
+				ranking = 3;
+			
+			sleepChar.goSleeping (ranking);
+		}
+	}
 }
