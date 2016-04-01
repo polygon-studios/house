@@ -12,6 +12,10 @@ public class Character : MonoBehaviour {
 	public KeyCode inputRight;
 	public string charID;
 
+	//door
+	public Door doorLeft;
+	public Door doorRight;
+
     //itemAnimations
     public GameObject slippersPrefab;
     public GameObject chiliPrefab;
@@ -71,14 +75,16 @@ public class Character : MonoBehaviour {
 				startingPosSetLR = true;
 				transform.eulerAngles = new Vector2(0, 0);
                 isInHouse = true;
-				
+				doorLeft.triggerDoorAni ();
 			}
+
 			leftToRightPlaying=true;
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[1], Time.deltaTime*8f);
 			
 			if(transform.position == leftToRightPoints[1]){
                 isInHouse = false;
                 resetAni();
+				doorRight.triggerDoorAni ();
             }
 		}
 		
@@ -88,6 +94,7 @@ public class Character : MonoBehaviour {
 				startingPosSetRL = true;
 				transform.eulerAngles = new Vector2(0, 180);
                 isInHouse = true;
+				doorRight.triggerDoorAni ();
             }
 			rightToLeftPlaying=true;
 			transform.position = Vector3.MoveTowards(this.transform.position, leftToRightPoints[0], Time.deltaTime*8f);
@@ -96,6 +103,7 @@ public class Character : MonoBehaviour {
 			if(transform.position == leftToRightPoints[0]){
                 isInHouse = false;
                 resetAni();
+				doorLeft.triggerDoorAni ();
 			}
 		}
 	}
@@ -112,6 +120,7 @@ public class Character : MonoBehaviour {
 				startingPosSetLRB = true;
 				transform.eulerAngles = new Vector2 (0, 0);
                 isInHouse = true;
+				doorLeft.triggerDoorAni ();
             }
 			if(transform.position.x < leftToRightBINDLEPoints[1].x){
 				leftToRightBINDLEPlaying = true;
@@ -138,6 +147,7 @@ public class Character : MonoBehaviour {
 			if(transform.position == leftToRightBINDLEPoints[2]){
                 isInHouse = false;
                 resetAni();
+				doorRight.triggerDoorAni ();
 
                 if(currentItemObj != null)
                 {
@@ -154,7 +164,7 @@ public class Character : MonoBehaviour {
                 startingPosSetRLB = true;
                 transform.eulerAngles = new Vector2(0, 180);
                 isInHouse = true;
-                Debug.Log("HERE");
+				doorRight.triggerDoorAni ();
             }
             if (transform.position.x > rightToLeftBINDLEPoints[1].x)
             {
@@ -185,6 +195,7 @@ public class Character : MonoBehaviour {
             {
                 isInHouse = false;
                 resetAni();
+				doorLeft.triggerDoorAni ();
 
                 if (currentItemObj != null)
                 {

@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 5784fd92c269a284fa3b87a8da94af49
+timeCreated: 1459550273
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Animation_Door_Day_0
+    21300002: Animation_Door_Day_1
+    21300004: Animation_Door_Day_2
+    21300006: Animation_Door_Day_3
+    21300008: Animation_Door_Day_4
+    21300010: Animation_Door_Day_5
+    21300012: Animation_Door_Day_6
+    21300014: Animation_Door_Day_7
+    21300016: Animation_Door_Day_8
+    21300018: Animation_Door_Day_9
+    21300020: Animation_Door_Day_10
+    21300022: Animation_Door_Day_11
+    21300024: Animation_Door_Day_12
+    21300026: Animation_Door_Day_13
+    21300028: Animation_Door_Day_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Animation_Door_Day_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_5
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_7
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_8
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_9
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_10
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_11
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_12
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_13
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    - name: Animation_Door_Day_14
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 8
+        width: 67
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 69.5}
+        - {x: -33.5, y: -69.5}
+        - {x: 33.5, y: -69.5}
+        - {x: 33.5, y: 69.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

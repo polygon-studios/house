@@ -5,12 +5,14 @@ using System.Collections.Generic;
 public class houseExt : MonoBehaviour {
 
     public List<GameObject> characters;
-    public GameObject jailbars;
-	public GameObject jailbarsSideLeft;
-	public GameObject jailbarsSideRight;
+	public List<GameObject> jailbars;
+	public List<GameObject> nightHouse;
+	public List<GameObject> dayHouse;
     public GameObject darkExt;
     public GameObject darkInt;
     public GameObject interior;
+	public Door doorLeft;
+	public Door doorRight;
     SpriteRenderer spriteRenderer;
 
     bool isDark;
@@ -28,17 +30,19 @@ public class houseExt : MonoBehaviour {
 
         currentExt = this.gameObject;
         currentInt = interior;
-        darkInt.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
-        darkExt.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+
+		foreach (GameObject darkObj in nightHouse) {
+			darkObj.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+		}
     }
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKey(KeyCode.K)){
-            spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0f);//hide day centre house
 		}
 		if(Input.GetKey(KeyCode.L)){
-            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+            spriteRenderer.color = new Color(1f, 1f, 1f, 1f);//show day centre house
 		}
         if (Input.GetKey(KeyCode.D))
         {
@@ -52,11 +56,6 @@ public class houseExt : MonoBehaviour {
             if (charObj.gameObject.GetComponent<Character>().isInHouse == true)
                 isStillInside = true;
         }
-		/*foreach (GameObject sleepingChar in sleepinCharacters)
-		{
-			if (charObj.gameObject.GetComponent<Character>().isInHouse == true)
-				isStillInside = true;
-		}*/
 
         if (isStillInside == false)
             changeToExt();
@@ -72,9 +71,17 @@ public class houseExt : MonoBehaviour {
     {
         isDark = true;
         spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
+
+		Animator doorLeftAni =  doorLeft.gameObject.GetComponent<Animator> ();
+		Animator doorRightAni = doorRight.gameObject.GetComponent<Animator> ();
+		doorLeftAni.SetTrigger ("night");
+		doorRightAni.SetTrigger ("night");
+
+		foreach (GameObject darkObj in nightHouse) {
+			darkObj.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f,1f);
+		}
+
         spriteRenderer = darkExt.gameObject.GetComponent<SpriteRenderer>();
-        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
-        darkInt.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
         interior.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
     }
     
@@ -88,27 +95,32 @@ public class houseExt : MonoBehaviour {
 
     public void showJailBars()
     {
-		Animator jailAnimator = jailbars.GetComponent<Animator> ();
-		jailAnimator.SetBool ("jailBarsOut", false);
-		jailAnimator.SetBool ("jailBarsIn", true);
+
+		foreach (GameObject bar in jailbars) {
+
+			Animator jailAnimator = bar.GetComponent<Animator> ();
+			jailAnimator.SetBool ("jailBarsOut", false);
+			jailAnimator.SetBool ("jailBarsIn", true);
+		}
 
 		jailActive = true;
 		jailTimer -= Time.deltaTime;
 
 		if (jailTimer < 0)
 			hideJailBars ();
-        //jailbars.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
     }
 
     void hideJailBars()
     {
-		jailActive = false;
-		Animator jailAnimator = jailbars.GetComponent<Animator> ();
-		jailAnimator.SetBool ("jailBarsIn", false);
-		jailAnimator.SetBool ("jailBarsOut", true);
+		foreach (GameObject bar in jailbars) {
+		
+			Animator jailAnimator = bar.GetComponent<Animator> ();
+			jailAnimator.SetBool ("jailBarsIn", false);
+			jailAnimator.SetBool ("jailBarsOut", true);
+		}
 
 		jailTimer = 7;
-        //jailbars.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+		jailActive = false;
     }
 }
