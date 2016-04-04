@@ -11,6 +11,7 @@ public class SocketIOLogic : MonoBehaviour
 {
 	private SocketIOComponent socket;
 	public GameObject callingCharAnims;
+	public GameObject laurels;
 	public houseExt houseE;
 	int side;
 	
@@ -28,6 +29,7 @@ public class SocketIOLogic : MonoBehaviour
 		socket.On("redButton", redButton);
 		socket.On ("endGame", endGame);
 		socket.On ("resetHouse", resetHouse);
+		laurels.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
 	}
 	
 	public void Update()
@@ -90,6 +92,7 @@ public class SocketIOLogic : MonoBehaviour
 		string fourth = string.Format ("{0}", e.data ["fourth"]);
 
 		callingCharAnims.GetComponent<CallingCharAnimations> ().sleepingAnimations (first, second, third, fourth);
+		laurels.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
 	}
 
