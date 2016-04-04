@@ -17,6 +17,7 @@ public class houseExt : MonoBehaviour {
 
     bool isDark;
 	public bool isInHouse;
+    public bool endGame;
     GameObject currentExt;
     GameObject currentInt;
 
@@ -55,6 +56,11 @@ public class houseExt : MonoBehaviour {
         {
             if (charObj.gameObject.GetComponent<Character>().isInHouse == true)
                 isStillInside = true;
+        }
+
+        if (endGame == true)
+        {
+            isStillInside = true;
         }
 
         if (isStillInside == false)

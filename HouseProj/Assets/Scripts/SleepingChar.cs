@@ -17,13 +17,16 @@ public class SleepingChar : MonoBehaviour {
 		SpriteRenderer spriteRenderer = this.gameObject.GetComponent<SpriteRenderer> ();
 		spriteRenderer.color = new Color(1f, 1f, 1f, 0f);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		Vector3 pos = new Vector3 (sleepingLocation2 [winPos].x, sleepingLocation2 [winPos].y, transform.position.z);
+
+    // Update is called once per frame
+    void Update() {
+        if (winPos < sleepingLocation2.Length) { 
+        Vector3 pos = new Vector3(sleepingLocation2[winPos].x, sleepingLocation2[winPos].y, transform.position.z);
+    
 
 		transform.position = pos;
-	}
+        }
+    }
 
 	public void goSleeping(int winPosSet){
 		winPos = winPosSet;

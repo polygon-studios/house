@@ -91,6 +91,7 @@ public class SocketIOLogic : MonoBehaviour
 		string third = string.Format ("{0}", e.data ["third"]);
 		string fourth = string.Format ("{0}", e.data ["fourth"]);
 
+        houseE.endGame = true;
 		callingCharAnims.GetComponent<CallingCharAnimations> ().sleepingAnimations (first, second, third, fourth);
 		laurels.gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
